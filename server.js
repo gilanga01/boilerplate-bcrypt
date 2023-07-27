@@ -20,7 +20,6 @@ app.get('/', (req, res) => {
 //END_ASYNC
 
 //START_SYNC
-
 let hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
 console.log(hash);
 let result = bcrypt.compareSync(myPlaintextPassword, hash);
